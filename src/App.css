@@ -14,18 +14,28 @@ body {
 
 .header {
   flex: 30%;
-  background-color: tomato;
-  width: 100%;
+  background-color: #358EF1;
+  width: 80%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.header .inputContainer {
+.header h1 {
+  color: #fff;
+  margin: 30px;
+  padding: 5px;
+}
+.inputContainer {
   display: flex;
   flex-direction: column;
+  margin-bottom: 5vh;
 }
 
+.todo-section{
+  display: flex;
+}
 .header input {
   width: 200px;
   height: 40px;
@@ -70,6 +80,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-transform: capitalize;
 }
 
 .task .content span {
@@ -80,14 +91,14 @@ body {
   height: 100%;
   font-size: 18px;
   border-right: none;
-  background-color: tomato;
+  background-color:#F135EC;
 }
 
 .task button {
   flex: 20%;
   height: 100%;
   border: none;
-  background-color: lightseagreen;
+  background-color:#F19835;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
   color: white;
