@@ -13,7 +13,7 @@ const App:FC =()=> {
  const handleChange = (event: ChangeEvent<HTMLInputElement>): void => {
   if (event.target.name === "task") {
     setTask(event.target.value);
-  } else if(event.target.name === "deadline") {
+  } else {
     setDeadline(Number(event.target.value));
   }
 };
@@ -33,13 +33,13 @@ const App:FC =()=> {
       })
     )
   }
-  
+
   return (
    <div className='App'>
     <div className='header'>
       <div className='inputContainer'>
         <input type='text' placeholder='Task ...' name='task' onChange={handleChange}/>
-        <input type="number" placeholder='Deadline (in days) ...' name='deadline'/>
+        <input type="number" placeholder='Deadline (in days) ...' name='deadline' onChange={handleChange}/>
       </div>
       <button onClick={addTask} >Add Task</button>
     </div>
