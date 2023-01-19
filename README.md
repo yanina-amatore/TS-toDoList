@@ -2,6 +2,7 @@
 
  I'm learning TS and wanted to use it in a simple App.
 
+ Deployed version http://ts-todolist-production.up.railway.app
 ## Available Scripts
 
 ### `npm start`
